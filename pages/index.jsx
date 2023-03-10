@@ -1,16 +1,12 @@
-import Head from 'next/head';
-import Header from "../components/Header";
+//This is main homepage
 
 export default function Home() {
-  return <>
-    <Head>
-      <title>SCIFIT</title>
-      <meta name="description" content="Best workout information blog for beginners" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-
-    <Header />
-    <div>this is body</div>
-  </>;
+  return (<>
+    <div className="mt-20">
+      <h1 className="text-3xl text-center font-semibold">Why SCIFIT?</h1>
+      <section className="">Motivational quotes to keep workout consistently</section>
+      <p>SCIFIT provides an information about fitness, health, and calculators with useful functionality. </p>
+      <p>You are always welcome to here and get resources as much as you want.</p>
+    </div>
+  </>);
 }
