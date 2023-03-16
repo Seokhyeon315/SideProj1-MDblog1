@@ -3,24 +3,26 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import React from "react";
+import Post from '@/components/Post';
 
 const BlogHome = ({ posts }) => {
-    console.log(posts)
-    return <div className='mt-20'>
-        <h1 className='text-center font-bold text-2xl'>SCIFIT Blog</h1>
-        <div className='text-center'>Horizontal Carousel blog posts</div>
 
-        {/* List of all posts */}
-        <div className=''>
-            {posts.map((post, index) =>
-                <ul>
-                    <li key={index}>{post.frontmatter.title}</li>
-                </ul>
-            )}
+    return (<>
+        <div className='mt-20'>
+            <h1 className='text-center font-bold text-2xl'>SCIFIT Blog</h1>
+
+            {/* List of all posts, grid */}
+            <div className='mt-3 grid grid-cols-3 gap-4'>
+                {posts.map((post, index) =>
+                    <Post post={post} key={index} />
+                )}
+            </div>
         </div>
-
-    </div>;
+    </>
+    );
 };
+
+
 
 export default BlogHome;
 
@@ -44,7 +46,6 @@ export async function getStaticProps() {
             frontmatter,
         }
     })
-
 
     return {
         props: {
