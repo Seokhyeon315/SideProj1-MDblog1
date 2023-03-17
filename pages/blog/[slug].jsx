@@ -9,14 +9,9 @@ export default function PostPage({ frontmatter: { title, date, cover_image }, co
     return (<>
         <div className='mt-20'>
 
-            {/* back to blog home */}
-            <Link href={'/blog'} legacyBehavior>
-                <a className="bg-yellow-500 p-2 rounded-md hover:bg-yellow-400">Go back</a>
-            </Link>
-
             {/* blog content: center, flex,  */}
             <div className='flex flex-col justify-center items-center'>
-                <div className='text-xl font-semibold'>{title}</div>
+                <div className='text-3xl font-semibold'>{title}</div>
                 <div className=''>Posted on: {date}</div>
                 <Image src={cover_image} alt="" width="500" height="300" />
                 <div className='prose'>
@@ -24,6 +19,10 @@ export default function PostPage({ frontmatter: { title, date, cover_image }, co
                 </div>
 
             </div>
+
+
+            {/* Below here, add related page or other post lists with carosuel */}
+
         </div>
     </>
     );

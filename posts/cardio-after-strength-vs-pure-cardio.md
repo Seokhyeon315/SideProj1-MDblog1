@@ -1,7 +1,7 @@
 ---
 title: 'Cardio Exercise After Strength Exercise vs Pure Cardio Exercise'
 date: 'March 15 2023'
-cover_image: '/images/posts/lifting.jpg'
+cover_image: '/images/posts/hiit_1.jpg'
 ---
 
 ## Introduction
