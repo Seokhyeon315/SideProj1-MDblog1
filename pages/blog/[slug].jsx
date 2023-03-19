@@ -2,19 +2,18 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter'
 import Markdown from 'markdown-to-jsx';
-import Link from 'next/link';
 import Image from 'next/image';
 
-export default function PostPage({ frontmatter: { title, date, cover_image }, content }) {
+export default function PostPage({ frontmatter: { title, date, cover_image }, slug, content }) {
     return (<>
-        <div className='mt-20'>
+        <div className='mt-20 sm:mt-28'>
 
             {/* blog content: center, flex,  */}
-            <div className='flex flex-col justify-center items-center'>
-                <div className='text-3xl font-semibold'>{title}</div>
-                <div className=''>Posted on: {date}</div>
-                <Image src={cover_image} alt="" width="500" height="300" />
-                <div className='prose'>
+            <div className='flex flex-col justify-center items-center px-4'>
+                <div className='text-2xl sm:text-3xl font-semibold mb-2'>{title}</div>
+                <div className='text-sm sm:text-base mb-4'>Posted on: {date}</div>
+                <Image src={cover_image} alt="" width="500" height="300" className='rounded-lg shadow-md' priority={true} />
+                <div className='prose mt-6'>
                     <Markdown>{content}</Markdown>
                 </div>
 
@@ -22,6 +21,11 @@ export default function PostPage({ frontmatter: { title, date, cover_image }, co
 
 
             {/* Below here, add related page or other post lists with carosuel */}
+            <div className="mt-10 sm:mt-20 flex flex-col items-center">
+                <p className="text-lg font-medium mb-2">Related Posts</p>
+
+                {/* Add carousel or other related posts list */}
+            </div>
 
         </div>
     </>
@@ -52,7 +56,8 @@ export async function getStaticProps({ params: { slug } }) {
     return {
         props: {
             frontmatter,
-            content
+            content,
+
         }
     }
 }

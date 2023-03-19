@@ -7,8 +7,8 @@ export default function App({ Component, pageProps }) {
     <Head>
       <title>SCIFIT</title>
       <meta name="description" content="Best fitness and health information providing website in the world." />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="" />
     </Head>
     <Layout>
       <Component {...pageProps} />

@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Footer = () => {
-    return <div className="block bg-black text-white py-3 my-3">©2023. BSH. All rights reserved.</div>;
+    const [showFooter, setShowFooter] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolledToBottom =
+                window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
+
+            setShowFooter(isScrolledToBottom);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    return (
+        <footer
+            className={`${showFooter ? "block" : "hidden"
+                } bg-black text-white py-3 mt-3 text-center`}
+        >
+            <div className="container mx-auto">©2023. BSH. All rights reserved.</div>
+        </footer>
+    );
 };
 
 export default Footer;

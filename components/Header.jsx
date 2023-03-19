@@ -16,6 +16,7 @@ const Header = () => {
                     </h1>
                 </Link >
 
+                {/* Desktop menu */}
                 <ul className="hidden sm:flex items-center">
                     <li className="px-4 hover:text-gray-400">
                         <Link href="/">Home</Link>
