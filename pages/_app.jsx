@@ -8,6 +8,8 @@ export default function App({ Component, pageProps }) {
       <title>SCIFIT</title>
       <meta name="description" content="Best fitness and health information providing website in the world." />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2381368326726370"
+        crossorigin="anonymous"></script>
       <link rel="icon" href="" />
     </Head>
     <Layout>
