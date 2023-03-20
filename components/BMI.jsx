@@ -5,14 +5,18 @@ function BMI() {
     const [height, setHeight] = useState(0);
     const [bmi, setBMI] = useState(0);
 
+
     const calculateBMI = () => {
         const bmiValue = weight / Math.pow(height / 100, 2);
         setBMI(bmiValue.toFixed(2));
     };
 
+
+
     return (
         <div className="flex flex-col px-4 py-6 sm:px-6 md:px-8 lg:px-10">
             <h2 className="text-2xl font-bold mb-4">BMI Calculator (Body Mass Index)</h2>
+
             <div className="mb-4">
                 <label className="block font-medium mb-2">
                     Weight (kg):

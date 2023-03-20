@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter'
 import Markdown from 'markdown-to-jsx';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function PostPage({ frontmatter: { title, date, cover_image }, slug, content }) {
     return (<>
@@ -22,7 +23,9 @@ export default function PostPage({ frontmatter: { title, date, cover_image }, sl
 
             {/* Below here, add related page or other post lists with carosuel */}
             <div className="mt-10 sm:mt-20 flex flex-col items-center">
-                <p className="text-lg font-medium mb-2">Related Posts</p>
+                <Link href="/blog">
+                    <button className="text-lg font-medium mb-2 bg-teal-400 rounded-md p-2">See Other Posts</button>
+                </Link>
 
                 {/* Add carousel or other related posts list */}
             </div>

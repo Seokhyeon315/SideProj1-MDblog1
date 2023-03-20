@@ -12,7 +12,7 @@ const Header = () => {
         <header className="fixed left-0 top-0 w-full z-10">
             <div className="flex justify-between items-center p-4 bg-black text-white">
                 <Link href="/" >
-                    <h1 className="text-2xl font-bold text-[#00df9a]">SCIFIT
+                    <h1 className="text-2xl pl-2 font-bold text-[#00df9a]">SCIFIT
                     </h1>
                 </Link >
 
@@ -27,9 +27,7 @@ const Header = () => {
                     <li className="px-4 hover:text-gray-400">
                         <Link href="/calculator">Calculator</Link>
                     </li>
-                    <li className="px-4 hover:text-gray-400">
-                        <Link href="/contact">Contact</Link>
-                    </li>
+
                 </ul>
                 {/* Mobile button */}
                 <div className="block sm:hidden z-10" onClick={handleNav}>
@@ -51,9 +49,7 @@ const Header = () => {
                         <li onClick={handleNav} className="p-4 text-3xl hover:text-green-400">
                             <Link href="/calculator">Calculator</Link>
                         </li>
-                        <li onClick={handleNav} className="p-4 text-3xl hover:text-green-400">
-                            <Link href="contact">Contact</Link>
-                        </li>
+
                     </ul>
                 </div>
             </div>

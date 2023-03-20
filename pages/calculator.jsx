@@ -35,9 +35,7 @@ const calculator = () => {
                     <div className="rounded-md px-3 border-2">
                         <BFP />
                     </div>
-                    {/* <div className="rounded-md px-3 border-2">
-                        <DWI />
-                    </div> */}
+
                 </div>
             </div></>
     );
@@ -46,17 +44,6 @@ const calculator = () => {
 export default calculator;
 
 
-
-
-
-
-
-
 // Heart Rate Calculator:
 // Maximum heart rate = 220 - age in years
 // Target heart rate for exercise = 50-85% of maximum heart rate
-
-
-
-// Water Intake Calculator:
-// Daily water intake = weight in kg x 0.033

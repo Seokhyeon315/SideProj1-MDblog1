@@ -89,7 +89,7 @@ function BMR() {
 
                 <div className="mb-4">
                     <label className="block font-medium mb-2">
-                        Height (m):
+                        Height (cm):
                     </label>
                     <input className="block w-full px-3 py-2 placeholder-gray-400 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent" type="number" value={height} onChange={(e) => setHeight(e.target.value)} />
                 </div>
