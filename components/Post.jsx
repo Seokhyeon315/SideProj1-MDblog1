@@ -8,7 +8,7 @@ const Post = ({ post }) => {
         <div className="max-w-sm rounded-lg overflow-hidden shadow-lg">
             <div className="grid grid-cols-1 gap-3">
 
-                <Image className="w-full h-48 object-cover" src={post.frontmatter.cover_image} alt="" width={500} height={300} priority />
+                <Image className="w-full h-48 object-cover" src={post.frontmatter.cover_image} alt="" width={500} height={300} priority={true} />
                 <div className="p-4">
                     <div className="font-bold text-xl mb-2">{post.frontmatter.title}</div>
                     <div className="text-gray-700 text-base">Posted on: {post.frontmatter.date}</div>
