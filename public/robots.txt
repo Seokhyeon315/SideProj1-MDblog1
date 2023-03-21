@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.scifit.org/sitemap.xml
+Sitemap: https://scifit.org/sitemap.xml
