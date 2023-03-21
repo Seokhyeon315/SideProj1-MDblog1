@@ -5,19 +5,13 @@ import Markdown from 'markdown-to-jsx';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 // Disable right-click for image
 if (typeof window !== 'undefined') {
-    const image = document.querySelector('img'); // Replace 'img' with the appropriate selector for your image element
-    if (image) {
-        image.addEventListener('contextmenu', (e) => {
-            e.preventDefault();
-        });
-        image.addEventListener('touchstart', (e) => {
-            e.preventDefault();
-        });
-    }
+    window.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+    });
 }
-
 
 
 export default function PostPage({ frontmatter: { title, date, cover_image }, slug, content }) {
