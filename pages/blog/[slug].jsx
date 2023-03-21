@@ -5,6 +5,14 @@ import Markdown from 'markdown-to-jsx';
 import Image from 'next/image';
 import Link from 'next/link';
 
+// Disable right-click for image
+if (typeof window !== 'undefined') {
+    window.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+    });
+}
+
+
 export default function PostPage({ frontmatter: { title, date, cover_image }, slug, content }) {
     return (<>
         <div className='mt-20 sm:mt-28'>
