@@ -4,6 +4,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import React from "react";
 import Post from '@/components/Post';
+import { sortByDate } from '../../utils'
 
 const BlogHome = ({ posts }) => {
 
@@ -55,7 +56,7 @@ export async function getStaticProps() {
 
     return {
         props: {
-            posts
+            posts: posts.sort(sortByDate),
         }
     }
 }

@@ -14,7 +14,7 @@ if (typeof window !== 'undefined') {
 }
 
 
-export default function PostPage({ frontmatter: { title, date, cover_image }, slug, content }) {
+export default function PostPage({ frontmatter: { title, date, cover_image }, content }) {
     return (<>
         <div className='mt-20 sm:mt-28'>
 
