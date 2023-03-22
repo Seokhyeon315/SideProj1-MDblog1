@@ -1,6 +1,6 @@
 ---
 title: 'Best Cardio Exercises to burn Belly Fat'
-date: 'March 12 2023'
+date: 'February 12 2023'
 cover_image: '/images/posts/cardio.jpg'
 ---
 

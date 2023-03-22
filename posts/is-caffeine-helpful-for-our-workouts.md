@@ -1,6 +1,6 @@
 ---
 title: 'Is Caffeine Helpful for Our Workouts?'
-date: 'March 19 2023'
+date: 'February 19 2023'
 cover_image: '/images/posts/coffee.jpg'
 ---
 

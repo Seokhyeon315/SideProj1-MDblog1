@@ -1,6 +1,6 @@
 ---
 title: 'Treadmill: Running Vs. Walking, Which is Best for Burning Fat?'
-date: 'March 16 2023'
+date: 'January 16 2023'
 cover_image: '/images/posts/treadmills.jpg'
 ---
 
