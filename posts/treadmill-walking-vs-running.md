@@ -4,7 +4,7 @@ date: 'January 16 2023'
 cover_image: '/images/posts/treadmills.jpg'
 ---
 
-# Introduction
+## Introduction
 
 In today's society, many people seek to burn fat and lose weight through various forms of exercise. The treadmill is one of the popular exercise equipment in the gym. It is known to provide cardiovascular benefits and assist in burning calories. However, many wonder whether running or walking on a treadmill is more effective for burning fat. In this post, we will explore the scientific details behind running and walking on a treadmill to determine which is the best for burning fat.
 

@@ -4,9 +4,7 @@ date: 'February 12 2023'
 cover_image: '/images/posts/cardio.jpg'
 ---
 
-# Best Cardio Exercises for Burning Belly Fat: A Beginner's Guide
-
-Are you a beginner looking to burn belly fat and improve overall health? Cardio exercises are a great place to start. This article will discuss the best cardio exercises for beginners who want to burn belly fat healthily. We'll also explore the relationship between cardio, heart rate, and burning belly fat and give tips on choosing the proper exercise for your fitness level and goals.
+Are you a beginner looking to burn belly fat and improve overall health? This article will discuss the best cardio exercises for beginners who want to burn belly fat healthily. We'll also explore the relationship between cardio, heart rate, and burning belly fat and give tips on choosing the proper exercise for your fitness level and goals.
 
 ## The Relationship Between Cardio and Heart Rate
 Cardio exercises increase your heart rate, which helps to improve your cardiovascular health. When doing cardio, your heart rate should be in the target zone, typically 50-85% of your maximum heart rate. 
