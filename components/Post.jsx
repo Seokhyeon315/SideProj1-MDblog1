@@ -13,7 +13,7 @@ const Post = ({ post }) => {
                     <div className="font-bold text-xl mb-2">{post.frontmatter.title}</div>
                     <div className="text-gray-700 text-base">Posted on: {post.frontmatter.date}</div>
 
-                    <Link href={`/blog/${post.slug}`} legacyBehavior>
+                    <Link href={`/${post.slug}`} legacyBehavior>
                         <a className="mt-2 bg-indigo-500 rounded-md text-white inline-block px-4 py-2 hover:bg-indigo-600">Read More</a>
                     </Link>
                 </div>

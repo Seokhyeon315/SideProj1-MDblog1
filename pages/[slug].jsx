@@ -32,7 +32,7 @@ export default function PostPage({ frontmatter: { title, date, cover_image }, co
 
             {/* Below here, add related page or other post lists with carosuel */}
             <div className="mt-10 sm:mt-20 flex flex-col items-center">
-                <Link href="/blog">
+                <Link href="/">
                     <button className="text-lg font-medium mb-2 bg-teal-400 rounded-md p-2">See Other Posts</button>
                 </Link>
 

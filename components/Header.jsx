@@ -9,21 +9,18 @@ const Header = () => {
     };
 
     return (
-        <header className="fixed left-0 top-0 w-full z-10">
+        <header className="fixed left-0 top-0 w-full z-30">
             <div className="flex justify-between items-center p-4 bg-black text-white">
                 <Link href="/" >
-                    <h1 className="text-2xl pl-2 font-bold text-[#00df9a]">SCIFIT
-                    </h1>
+                    <h1 className="text-2xl pl-2 font-bold text-[#00df9a]">SCIFIT</h1>
                 </Link >
 
                 {/* Desktop menu */}
-                <ul className="hidden sm:flex items-center">
+                <ul className="hidden sm:flex items-center mx-2">
                     <li className="px-4 hover:text-gray-400">
-                        <Link href="/">Home</Link>
+                        <Link href="/">Blog</Link>
                     </li>
-                    <li className="px-4 hover:text-gray-400">
-                        <Link href="/blog">Blog</Link>
-                    </li>
+
                     <li className="px-4 hover:text-gray-400">
                         <Link href="/calculator">Calculator</Link>
                     </li>
@@ -41,10 +38,7 @@ const Header = () => {
                     : "sm:hidden absolute top-0 bottom-0 left-[-100%] right-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"}>
                     <ul>
                         <li onClick={handleNav} className="p-4 text-3xl hover:text-green-400">
-                            <Link href="/">Home</Link>
-                        </li>
-                        <li onClick={handleNav} className="p-4 text-3xl hover:text-green-400">
-                            <Link href="/blog">Blog</Link>
+                            <Link href="/">Blog</Link>
                         </li>
                         <li onClick={handleNav} className="p-4 text-3xl hover:text-green-400">
                             <Link href="/calculator">Calculator</Link>
