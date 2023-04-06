@@ -1,6 +1,6 @@
 ---
 title: 'Postural problems of modern people: Turtle Necks and Rounded Shoulders'
-date: 'April 06 2023'
+date: 'April 03 2023'
 cover_image: '/images/posts/posture.jpeg'
 ---
 
