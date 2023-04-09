@@ -6,10 +6,14 @@ import matter from 'gray-matter';
 import React from "react";
 import Post from '@/components/Post';
 import { sortByDate } from '../utils'
+import Head from 'next/head';
 
-const BlogHome = ({ posts }) => {
+const BlogHome = ({ posts, currentUrl }) => {
 
   return (<>
+    <Head>
+      <link rel="canonical" href={`https://scifit.org${currentUrl}`} />
+    </Head>
     <div className='mt-20'>
       <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <h1 className='text-center font-bold text-3xl'>SCIFIT Blog</h1>

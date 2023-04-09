@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import Markdown from 'markdown-to-jsx';
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
 
 
 // Disable right-click for image
@@ -14,8 +15,11 @@ if (typeof window !== 'undefined') {
 }
 
 
-export default function PostPage({ frontmatter: { title, date, cover_image }, content }) {
+export default function PostPage({ frontmatter: { title, date, cover_image }, content, currentUrl }) {
     return (<>
+        <Head>
+            <link rel="canonical" href={`https://scifit.org${currentUrl}`} />
+        </Head>
         <div className='mt-20 sm:mt-28'>
 
             {/* blog content: center, flex,  */}
