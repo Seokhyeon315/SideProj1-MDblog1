@@ -21,7 +21,7 @@ const Footer = () => {
                 } bg-black text-white py-3 mt-3 text-center left-0 bottom-0`}
         >
             <div className="container mx-auto">©2023. BSH. All rights reserved.</div>
-            <div className="text-base">Contact: spacecoder831@gmail.com</div>
+            <div className="text-base">Contact: aetherforall@gmail.com</div>
         </footer>
     );
 };
